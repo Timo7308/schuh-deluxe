@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8"/>
+
+<head>
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="bootstrap.css">   
+</head>
+
+
+<body style="background-color: rgb(221, 219, 208);">
+
+   <!-- Obere Navigationsleiste mit Shop-Name, Adminbereich und Konto -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(40, 40, 43)">
+    <a class="navbar-brand" href="Startseite_Admin.html">Schuh Deluxe</a> 
+    <a class="navbar-brand" href="#">Adminbereich</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" >
+      <div class="control">
+        <form class="form-inline">
+      <ul class="navbar-nav mr-auto" id="navbarSupportedContent">
+        <li class="nav-item active">
+          <a class="nav-link" href="#"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Konto.html">Konto</a>
+        </li>
+      </ul>
+     </form>
+     </div>
+    </div> 
+  </nav>
+
+  <!-- Untere Navigationsleiste. Es können alle Warenkörbe oder alle Nutzer angesehen werden. Und es können neue Artikel hinzugefügt werden-->
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(255, 255, 255);">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+    <li class="nav-item">
+    <a class="navbar-brand" href="Nutzer_Liste.html">Nutzer</a>
+    </li>
+    <li class="nav-item">
+    <a class="navbar-brand" href="">Warenkörbe</a>
+    </li>
+    <li class="nav-item">
+      <a class="navbar-brand" href="Artikel_hinzufuegen.php">Neuer Artikel</a>
+      </li>
+    </ul>
+  </div>
+  
+      <!-- Suchleiste-->
+       <div class="control">
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search">
+      </div>
+        <button class="btn float-right btn-outline-success" id="suche" type="submit" placeholder="Schuhe finden">Suchen</button>
+      </form> 
+    </div>
+  </nav>
+ 
+   <!-- Liste mit den Warenkörben aller Nutzer-->
+  <div class="card" id="Nutzerliste2">   
+    <div class="card-body">
+      <p class="card-text"><h3>Warenkörbe aller Nutzer</h3></p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nutzername</th>
+            <th scope="col">Artikel im Warenkorb</th>
+            <th scope="col">Gesamtpreis des Warenkorbs</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th></a>
+
+             <!-- Über die Verlinkung kann der Warenkorb von Peter62 eingesehen werden-->
+            <td><a href="../Entwicklung von Webapplikationen/Warenkorb.html">Peter62</td></a>
+            <td>2</td>
+            <td>140 Euro Euro</a></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jakob 403</td>
+            <td>7</td>
+            <td>865,95 Euro</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Leon 2</td>
+            <td>1</td>
+            <td>39,99 Euro</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  </body>
+  </html>
+
+
+ 
+  
+  

@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+
+
+<html>
+<meta charset="utf-8" />
+
+<head>
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+
+
+<body style="background-color: rgb(221, 219, 208);">
+
+    <!-- Obere Navigationsleiste mit Shop-Name, Warenkorb und Konto -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(40, 40, 43)">
+        <a class="navbar-brand" href="#">Schuh Deluxe</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+            <div class="control">
+                <form class="form-inline">
+                    <ul class="navbar-nav mr-auto" id="navbarSupportedContent">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="Konto.html">Konto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Warenkorb.html">Warenkorb</a>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Untere Navigationsleiste. Es können Damen oder Herrenschuhe gewählt werden und es können Schuhe über die Suchleiste gefunden werden-->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(255, 255, 255);">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="navbar-brand" href="#">Damen</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-brand" href="Startseite.html">Herren</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Suchleiste-->
+        <div class="control">
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" placeholder="Schuhe finden" type="search">
+        </div>
+        <button class="btn float-right btn-outline-success" id="suche" type="submit">Suchen</button>
+        </form>
+        </div>
+    </nav>
+
+    <!-- Warenkorb-->
+    <form id="myForm">
+        <div class="card" id="Warenkorb1">
+            <div class="card-body">
+                <p class="card-text"><h2>Artikel im Warenkorb</h2><hr></p>
+
+                <!-- Artikel 1 im Warenkorb-->
+                <div class="" id="Warenkorbbild">
+                    <div class="card-body">
+                        <img class="card-img-top" src="Bilder/Sneaker.jpg">
+                        <p class="card-text"><p>Sneaker Nike</p><p>Preis: 60 Euro</p><p>Größe: 43</p><p>Menge:<input type="number" class="form-control" value="0" id="menge1"></p>
+                        <button onclick="myfunction()" style="font-size:14px">Löschen</button> 
+                       
+
+                    </div>
+                </div>
+
+                <!-- Artikel 2 im Warenkorb-->
+                <div class="" id="Warenkorbbild2">
+                    <div class="card-body">
+                        <img class="card-img-top" src="Bilder/Laufschuh.jpg">
+                        <p class="card-text"><p>Laufschuhe Nike</p><p>Preis: 80 Euro</p><p>Größe: 43</p><p>Menge:<input type="number" class="form-control" value="0" id="menge2"></p>
+                        <button onclick="myfunction1()" style="font-size:14px">Löschen</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Warenkorbzusammenfassung-->
+        <div class="card" id="Warenkorb2">
+            <div class="card-body">
+                <p class="card-text">
+                 <h2>Preis aller Artikel</h2>
+
+                <hr><h6">1. Sneaker Nike</h6>
+
+                <br><h6">2. Laufschuhe Nike</h6>
+                
+                <br><br><br><br><p>Versandkosten: Gratis</p><hr> <h5><span>Gesamt:</span> <output id="betrag" for="menge">140</output> €</h5><hr><br></p>
+                <p class="card-text"></p>
+                <button type="button" class="btn btn-success btn-lg btn-block">Bezahlen</button>
+                <button type="button" class="btn btn-primary btn-lg btn-block">Mit PayPal bezahlen</button>
+            </div>
+        </div>
+</body>
+</form>
+
+
+<script src="Warenkorb.js"></script>
+
+</html>

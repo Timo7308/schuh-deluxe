@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8"/>
+
+<head>
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+
+
+<body style="background-color: rgb(221, 219, 208);">
+
+   <!-- Obere Navigationsleiste mit Shop-Name, Warenkorb und Konto -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(40, 40, 43)">
+    <a class="navbar-brand" href="#">Schuh Deluxe</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" >
+      <div class="control">
+        <form class="form-inline">
+      <ul class="navbar-nav mr-auto" id="navbarSupportedContent">
+        <li class="nav-item active">
+          <a class="nav-link" href="Konto.html">Konto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Warenkorb.html">Warenkorb</a>
+        </li>
+      </ul>
+     </form>
+     </div>
+    </div> 
+  </nav>
+
+  <!-- Untere Navigationsleiste. Es können Damen oder Herrenschuhe gewählt werden und es können Schuhe über die Suchleiste gefunden werden-->
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(255, 255, 255);">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+    <li class="nav-item">
+    <a class="navbar-brand" href="#">Damen</a>
+    </li>
+    <li class="nav-item">
+    <a class="navbar-brand" href="Startseite.html">Herren</a>
+    </li>
+    </ul>
+  </div>
+
+  <!-- Suchleiste-->
+       <div class="control">
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" placeholder="Schuhe finden" type="search">
+      </div>
+        <button class="btn float-right btn-outline-success" id="suche" type="submit">Suchen</button>
+      </form> 
+  </div>
+  </nav>
+
+
+  <!-- Produktfoto -->
+    <div class="card" style.display="none"; id="product">
+    <div class="card-body">
+    <img class="card-img-top"  src="Bilder/Sneaker.jpg" width="600px" height="350px";>
+  </div>
+</div>
+
+<!-- Informationen zum Produkt -->
+ 
+    <div class="card" id="productdescription">
+        <div class="card-body" id="edit">
+            <h2>Sneaker</h2>
+            <p class="card-text"><p>Marke: Nike</p><h5><p class="text-danger">Preis: 60 Euro</p></h5><h5>Bewertung: * * * </h5><br><hr></p>
+
+            <!-- Wahl der Schuhgröße -->
+            <div class="form-group">
+                <select class="form-select" id="Groeße">
+                    <option selected>Größe wählen</option>
+                    <option value="1">39</option>
+                    <option value="2">40</option>
+                    <option value="3">41</option>
+                    <option value="3">42</option>
+                    <option value="3">43</option>
+                    <option value="3">44</option>
+                </select>
+            </div><br>
+
+            <!-- Button, um das Produkt in den Warenkorb zu legen -->
+            <button onclick="showfunction()" id="WarenkorbButton1" class="btn btn-success btn-lg btn-block">
+                In den Warenkorb
+            </button><hr>
+
+
+
+            <p class="card-text">Schneller Versand</p>
+            <p class="card-text">30 Tage Rückgaberecht</p>
+        </div>
+
+
+       
+
+        <script src="Warenkorb.js"></script>
+
+    
+</body>
+</html>

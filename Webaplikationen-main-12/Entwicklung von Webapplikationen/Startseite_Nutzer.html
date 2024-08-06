@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8"/>
+
+<head>
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="bootstrap.css"> 
+</head>
+
+
+<body style="background-color: rgb(221, 219, 208);">
+
+  <!-- Obere Navigationsleiste mit Shop-Name, Warenkorb und Konto -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(40, 40, 43);">
+    <a class="navbar-brand" href="#">Schuh Deluxe</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" >
+      <div class="control">
+        <form class="form-inline">
+      <ul class="navbar-nav mr-auto" id="navbarSupportedContent">
+        <li class="nav-item active">
+          <a class="nav-link" href="Konto.html">Konto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Warenkorb.html">Warenkorb</a>
+        </li>
+      </ul>
+     </form>
+     </div>
+    </div>     
+  </nav>
+
+<!-- Untere Navigationsleiste. Es können Damen oder Herrenschuhe gewählt werden und es können Schuhe über die Suchleiste gefunden werden-->
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(255, 255, 255);">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+    <li class="nav-item">
+    <a class="navbar-brand" href="#">Damen</a>
+    </li>
+    <li class="nav-item">
+    <a class="navbar-brand" href="#">Herren</a>
+    </li>
+    </ul>
+  </div>
+       <div class="control">
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" placeholder="Schuhe finden" type="search">
+      </div>
+        <button class="btn float-right btn-outline-success" id="suche" type="submit">Suchen</button>
+      </form> 
+  </div>
+  </nav>
+  
+
+  <!-- Auflistung von 3 Schuhen. Mit dem Informationen: Marke, Preis und Bewertung  -->
+    <div class="row" id="U">
+    <h3>Schuhe: Herren</h3>
+    </div>
+      <div class="card" id="schuhe1">
+        <a href="Product1_Nutzer.html"><img class="card-img-top"  src="Bilder/Sneaker.jpg"></a>
+        <div class="card-body">
+          <h4>Sneaker</h4>
+          <p class="card-text"><h6>Marke: Nike</h6><p class="text-danger">Preis: 60 Euro </p>Bewertung: * * *</p>
+        </div>
+      </div>
+      
+      <div class="card" id="schuhe2">
+        <a href="Product2_Nutzer.html"><img class="card-img-top"  src="Bilder/Laufschuhe2.jpg"></a>
+        <div class="card-body">
+          <h4>Laufschuhe</h4>
+          <p class="card-text"><h6>Marke: Nike</h6><p class="text-danger">Preis: 89,99 Euro </p>Bewertung: * * * * *</p>
+        </div>
+      </div>
+      <div class="card" id="schuhe3">
+        <a href="Product3_Nutzer.html"><img class="card-img-top"  src="Bilder/Laufschuh.jpg"></a>
+        <div class="card-body">
+          <h4>Laufschuhe</h4>
+          <p class="card-text"><h6>Marke: Nike</h6><p class="text-danger">Preis: 80 Euro </p>Bewertung: * * * * *</p>
+        </div>
+      </div>
+</body>
+</div>
+</html>
